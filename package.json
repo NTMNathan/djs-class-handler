@@ -1,0 +1,36 @@
+{
+    "name": "djs-command-handler",
+    "version": "1.0.0",
+    "description": "A Discord.js Command Handler example using Slash Commands and Context Menus",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NTMNathan/djs-command-handler.git"
+    },
+    "keywords": [
+        "discord-bot",
+        "discord-js",
+        "context-menus",
+        "discord-slash-commands",
+        "discord-context-menus",
+        "slash-commands",
+        "bot",
+        "discord",
+        "javascript",
+        "nodejs"
+    ],
+    "author": "Nate#1409",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/NTMNathan/djs-command-handler/issues"
+    },
+    "homepage": "https://github.com/NTMNathan/djs-command-handler#readme",
+    "dependencies": {
+        "common-tags": "^1.8.0",
+        "discord.js": "^13.1.0",
+        "dotenv": "^10.0.0"
+    }
+}
