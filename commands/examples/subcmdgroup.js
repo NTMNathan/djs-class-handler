@@ -67,7 +67,7 @@ module.exports = class Food extends Command {
                 }
             ],
             type: "CHAT_INPUT",
-            usage: "avatar [sub command] [user]",
+            usage: "fruit [sub command] [options]",
             defaultPermission: true,
             category: "Examples",
             permissions: ["Use Application Commands", "Send Messages", "Embed Links"]
