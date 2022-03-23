@@ -33,7 +33,7 @@ npm i -g --add-python-to-path --vs2015 --production windows-build-tools
 
 6. Start the bot.
 ```bash
-node index
+node bot
 ```
 
 ## Usage
