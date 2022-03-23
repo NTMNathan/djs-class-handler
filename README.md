@@ -1,6 +1,11 @@
 # Discord Command Handler
 A Discord.js Command Class Handler example using Slash Commands and Context Menus.
 
+## Weeby API [Advert]
+Never get stressed again with Discord Bot Development. With [Weeby API](https://weebyapi.xyz/), it offers a range of endpoints available from Generators, GIFs and much more!
+
+Get Started Now: [https://weebyapi.xyz/](https://weebyapi.xyz/)
+
 ## Features
 - 🖱 Using Classes
 - ✅ Easy to setup
