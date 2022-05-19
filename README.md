@@ -50,44 +50,9 @@ These will create a new set of commands in the server.
 **Command Folder Structure:**
 - `context` folder contains the Context Menu commands.
 - `general` and other folders are slash commands.
-
-### Permissions
-Using the `setdefaultPermission` boolean in your command file, this will determine the permissions for both the Slash and Context Menu commands when the bot starts up (through the `ready` event). The bot may require another restart for it to work properly (even after commands are created).
-
-> Read more about Slash Command Permissions [here](https://discordjs.guide/creating-your-bot/command-handling.html#command-handling)!
-
-**Examples:**
-```js
-// User
-const permissions = [
-    {
-        id: USER_ID,
-        type: "USER",
-        permission: true // Change to "false" to deny them command access
-    }
-];
-
-await r.permissions.set({ permissions });
-
-// Role
-const permissions = [
-    {
-        id: ADMIN_ROLE_ID,
-        type: "ROLE",
-        permission: true
-    }
-];
-
-await r.permissions.set({ permissions });
-```
-
-- `true`: Means that the command can be used by anyone.
-- `false`: Means that the command will only be available to be select users and roles.
-
 ## 📚 Guides
 - [Creating commands](https://discordjs.guide/creating-your-bot/creating-commands.html)
 - [Replying to Slash Commands](https://discordjs.guide/interactions/slash-commands.html#replying-to-slash-commands)
-- [Slash Command Permissions](https://discordjs.guide/interactions/slash-commands.html#slash-command-permissions)
 - [Handling Commands](https://discordjs.guide/creating-your-bot/command-handling.html#command-handling)
 
 ## 👋 Support

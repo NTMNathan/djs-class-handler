@@ -2,15 +2,14 @@ const Command = require('../../structures/CommandClass');
 
 const { MessageEmbed } = require('discord.js');
 const { ContextMenuCommandBuilder } = require('@discordjs/builders');
-const { ApplicationCommandType } = require('discord-api-types/v9');
+const { ApplicationCommandType } = require('discord-api-types/v10');
 
 module.exports = class Avatar extends Command {
 	constructor(client) {
 		super(client, {
 			data: new ContextMenuCommandBuilder()
 				.setName('Avatar')
-				.setType(ApplicationCommandType.User)
-				.setDefaultPermission(true),
+				.setType(ApplicationCommandType.User),
 			contextDescription: 'Fetches the avatar of a user.',
 			usage: 'Avatar',
 			category: 'Context',

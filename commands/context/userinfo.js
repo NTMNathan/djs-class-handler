@@ -2,7 +2,7 @@ const Command = require('../../structures/CommandClass');
 
 const { MessageEmbed } = require('discord.js');
 const { ContextMenuCommandBuilder } = require('@discordjs/builders');
-const { ApplicationCommandType } = require('discord-api-types/v9');
+const { ApplicationCommandType } = require('discord-api-types/v10');
 const { stripIndents } = require('common-tags');
 
 module.exports = class UserInfo extends Command {
@@ -10,8 +10,7 @@ module.exports = class UserInfo extends Command {
 		super(client, {
 			data: new ContextMenuCommandBuilder()
 				.setName('User Info')
-				.setType(ApplicationCommandType.User)
-				.setDefaultPermission(true),
+				.setType(ApplicationCommandType.User),
 			contextDescription: 'Returns information about a user.',
 			usage: 'User Info',
 			category: 'Context',
@@ -29,19 +28,19 @@ module.exports = class UserInfo extends Command {
 				{
 					name: '👤 Account Info',
 					value: stripIndents`
-                        **ID:** ${member.user.id}
-                        **Bot:** ${member.user.bot ? 'Yes' : 'No'}
-                        **Created:** <t:${Math.floor(member.user.createdTimestamp / 1000)}:d>
-                        `,
+                    **ID:** ${member.user.id}
+                    **Bot:** ${member.user.bot ? 'Yes' : 'No'}
+                    **Created:** <t:${Math.floor(member.user.createdTimestamp / 1000)}:d>
+                    `,
 					inline: true,
 				},
 				{
 					name: '📋 Member Info',
 					value: stripIndents`
-                        **Joined Server:** <t:${Math.floor(member.joinedTimestamp / 1000)}:R>
-                        **Nickname:** ${member.nickname || 'None'}
-                        **Hoist Role:** ${member.roles.hoist ? member.roles.hoist.name : 'None'}
-                        `,
+                    **Joined Server:** <t:${Math.floor(member.joinedTimestamp / 1000)}:R>
+                    **Nickname:** ${member.nickname || 'None'}
+                    **Hoist Role:** ${member.roles.hoist ? member.roles.hoist.name : 'None'}
+                    `,
 					inline: true,
 				},
 				{

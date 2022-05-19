@@ -26,5 +26,13 @@ module.exports = class InteractionCreate extends Event {
 				return interaction.reply({ content: `An error has occurred.\n\n**\`${e.message}\`**` });
 			}
 		}
+
+		if (interaction.isModalSubmit()) {
+			if (interaction.customId === 'prefixForm') {
+				const prefix = interaction.fields.getTextInputValue('prefix');
+
+				return await interaction.reply({ content: `Prefix has been set to: **\`${prefix}\`**` });
+			}
+		}
 	}
 };

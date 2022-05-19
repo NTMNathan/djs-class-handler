@@ -10,18 +10,41 @@ module.exports = class Help extends Command {
 			data: new SlashCommandBuilder()
 				.setName('help')
 				.setDescription('Returns command information.')
-				.setDefaultPermission(true)
 				.addStringOption((str) =>
 					str
 						.setName('command')
 						.setDescription('The command you want to get help for.')
 						.setRequired(false)
-						.addChoice('Hello', 'Hello')
-						.addChoice('Avatar', 'Avatar')
-						.addChoice('User Info', 'User Info')
-						.addChoice('Help', 'help')
-						.addChoice('Ping', 'ping')
-						.addChoice('Not Found', 'notfound'),
+						.addChoices(
+							{
+								name: 'Hello',
+								value: 'hello',
+							},
+							{
+								name: 'Avatar',
+								value: 'Avatar',
+							},
+							{
+								name: 'User Info',
+								value: 'User Info',
+							},
+							{
+								name: 'Help',
+								value: 'help',
+							},
+							{
+								name: 'Ping',
+								value: 'ping',
+							},
+							{
+								name: 'Prefix',
+								value: 'prefix',
+							},
+							{
+								name: 'Not Found',
+								value: 'notfound',
+							},
+						),
 				),
 			usage: 'help <command>',
 			category: 'Info',
