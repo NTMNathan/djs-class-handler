@@ -1,6 +1,6 @@
 {
     "name": "djs-command-handler",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A Discord.js Command Class Handler example using Slash Commands and Context Menus.",
     "main": "bot.js",
     "scripts": {
