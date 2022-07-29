@@ -1,7 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { MessageEmbed } = require('discord.js');
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const { stripIndents } = require('common-tags');
 
 module.exports = class Help extends Command {
@@ -58,7 +57,7 @@ module.exports = class Help extends Command {
 			if (client.commands.has(query)) {
 				const command = client.commands.get(query);
 
-				const commandEmbed = new MessageEmbed()
+				const commandEmbed = new EmbedBuilder()
 					.setTitle(`**\`${command.name}\`** Command Information`)
 					.setThumbnail(client.user.displayAvatarURL({ dynamic: true, size: 2048 }))
 					.setColor('#57f287')

@@ -1,7 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { MessageEmbed } = require('discord.js');
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const { stripIndents } = require('common-tags');
 
 module.exports = class Ping extends Command {
@@ -19,10 +18,10 @@ module.exports = class Ping extends Command {
 		const now = Date.now();
 		await interaction.deferReply();
 
-		const pingEmbed = new MessageEmbed()
+		const pingEmbed = new EmbedBuilder()
 			.setAuthor({
 				name: `${client.user.username}'s Ping`,
-				icon_url: client.user.displayAvatarURL({ dynamic: true, size: 2048 }),
+				iconURL: client.user.displayAvatarURL({ size: 2048 }),
 			})
 			.setColor('#fee75c')
 			.setDescription(stripIndents`

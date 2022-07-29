@@ -1,8 +1,7 @@
 const Command = require('../../structures/CommandClass');
 
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandType } = require('discord.js');
 const { ContextMenuCommandBuilder } = require('@discordjs/builders');
-const { ApplicationCommandType } = require('discord-api-types/v10');
 const { stripIndents } = require('common-tags');
 
 module.exports = class UserInfo extends Command {
@@ -20,7 +19,7 @@ module.exports = class UserInfo extends Command {
 	async run(client, interaction) {
 		const member = interaction.guild.members.cache.get(interaction.targetId);
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 			.setTitle(`**${member.user.username}#${member.user.discriminator}**`)
 			.setColor(client.config.embedColor)
 			.setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 2048 }))

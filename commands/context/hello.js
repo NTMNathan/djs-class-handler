@@ -1,7 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { ContextMenuCommandBuilder } = require('@discordjs/builders');
-const { ApplicationCommandType } = require('discord-api-types/v10');
+const { ContextMenuCommandBuilder, ApplicationCommandType } = require('discord.js');
 
 module.exports = class Hello extends Command {
 	constructor(client) {
@@ -16,6 +15,6 @@ module.exports = class Hello extends Command {
 		});
 	}
 	async run(client, interaction) {
-		await interaction.reply({ content: `Hello ${interaction.user}! Here, you should have a slice of vanilla cake 😊🍰` });
+		await interaction.reply({ content: `Hello ${interaction.user}! Here, you should have a slice of vanilla cake 😊🍰\n\nMessage ID: ${interaction.targetId}` });
 	}
 };

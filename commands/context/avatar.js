@@ -1,9 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { MessageEmbed } = require('discord.js');
-const { ContextMenuCommandBuilder } = require('@discordjs/builders');
-const { ApplicationCommandType } = require('discord-api-types/v10');
-
+const { EmbedBuilder, ContextMenuCommandBuilder, ApplicationCommandType } = require('discord.js');
 module.exports = class Avatar extends Command {
 	constructor(client) {
 		super(client, {
@@ -19,10 +16,10 @@ module.exports = class Avatar extends Command {
 	async run(client, interaction) {
 		const user = client.users.cache.get(interaction.targetId);
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 			.setTitle(`**${user.username}'s Avatar**`)
 			.setColor(client.config.embedColor)
-			.setImage(user.displayAvatarURL({ dynamic: true, size: 2048 }));
+			.setImage(user.displayAvatarURL({ size: 2048 }));
 
 		await interaction.reply({ embeds: [embed] });
 	}

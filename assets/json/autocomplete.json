@@ -1,0 +1,34 @@
+[
+    {
+        "name": "iPhone",
+        "value": "iPhone"
+    },
+    {
+        "name": "iPad",
+        "value": "iPad"
+    },
+    {
+        "name": "MacBook Pro",
+        "value": "MacBook Pro"
+    },
+    {
+        "name": "iMac",
+        "value": "iMac"
+    },
+    {
+        "name": "Windows",
+        "value": "Windows"
+    },
+    {
+        "name": "Android",
+        "value": "Android"
+    },
+    {
+        "name": "Chromebook",
+        "value": "Chromebook"
+    },
+    {
+        "name": "Apple Watch",
+        "value": "Apple Watch"
+    }
+]
