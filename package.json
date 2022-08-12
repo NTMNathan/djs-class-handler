@@ -33,7 +33,7 @@
     "dependencies": {
         "@discordjs/rest": "^1.0.1",
         "common-tags": "^1.8.2",
-        "discord-api-types": "^0.37.0",
+        "discord-api-types": "^0.37.2",
         "discord.js": "^14.1.1",
         "dotenv": "^16.0.1"
     },
