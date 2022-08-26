@@ -1,7 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { EmbedBuilder, ApplicationCommandType } = require('discord.js');
-const { ContextMenuCommandBuilder } = require('@discordjs/builders');
+const { EmbedBuilder, ContextMenuCommandBuilder, ApplicationCommandType } = require('discord.js');
 const { stripIndents } = require('common-tags');
 
 module.exports = class UserInfo extends Command {
@@ -9,7 +8,8 @@ module.exports = class UserInfo extends Command {
 		super(client, {
 			data: new ContextMenuCommandBuilder()
 				.setName('User Info')
-				.setType(ApplicationCommandType.User),
+				.setType(ApplicationCommandType.User)
+				.setDMPermission(false),
 			contextDescription: 'Returns information about a user.',
 			usage: 'User Info',
 			category: 'Context',
@@ -17,7 +17,7 @@ module.exports = class UserInfo extends Command {
 		});
 	}
 	async run(client, interaction) {
-		const member = interaction.guild.members.cache.get(interaction.targetId);
+		const member = interaction.guild.members.cache.get(interaction.targetId) || interaction.member;
 
 		const embed = new EmbedBuilder()
 			.setTitle(`**${member.user.username}#${member.user.discriminator}**`)

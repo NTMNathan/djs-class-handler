@@ -8,6 +8,7 @@ module.exports = class Button extends Command {
 			data: new SlashCommandBuilder()
 				.setName('autocomplete')
 				.setDescription('Examples of Autocomplete.')
+				.setDMPermission(false)
 				.addStringOption((str) =>
 					str
 						.setName('device')

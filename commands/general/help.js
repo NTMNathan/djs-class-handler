@@ -9,6 +9,7 @@ module.exports = class Help extends Command {
 			data: new SlashCommandBuilder()
 				.setName('help')
 				.setDescription('Returns command information.')
+				.setDMPermission(true)
 				.addStringOption((str) =>
 					str
 						.setName('command')

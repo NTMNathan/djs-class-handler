@@ -7,7 +7,8 @@ module.exports = class Button extends Command {
 		super(client, {
 			data: new SlashCommandBuilder()
 				.setName('button')
-				.setDescription('Examples of the Discord Button component.'),
+				.setDescription('Examples of the Discord Button component.')
+				.setDMPermission(true),
 			usage: 'button',
 			category: 'Info',
 			permissions: ['Use Application Commands', 'Send Messages', 'Embed Links'],

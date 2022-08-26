@@ -1,6 +1,6 @@
 {
     "name": "djs-command-handler",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "A Discord.js Command Class Handler example using Slash Commands and Context Menus.",
     "main": "bot.js",
     "scripts": {
@@ -31,15 +31,14 @@
     },
     "homepage": "https://github.com/NTMNathan/djs-command-handler#readme",
     "dependencies": {
-        "@discordjs/rest": "^1.0.1",
+        "@discordjs/rest": "^1.1.0",
         "common-tags": "^1.8.2",
-        "discord-api-types": "^0.37.0",
-        "discord.js": "^14.1.1",
+        "discord.js": "^14.3.0",
         "dotenv": "^16.0.1"
     },
     "devDependencies": {
-        "eslint": "^8.20.0",
+        "eslint": "^8.22.0",
         "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^6.0.0"
+        "eslint-plugin-promise": "^6.0.1"
     }
 }

@@ -1,13 +1,14 @@
 const Command = require('../../structures/CommandClass');
 
-const { ContextMenuCommandBuilder, ApplicationCommandType } = require('discord.js');
+const { ApplicationCommandType, ContextMenuCommandBuilder } = require('discord.js');
 
 module.exports = class Hello extends Command {
 	constructor(client) {
 		super(client, {
 			data: new ContextMenuCommandBuilder()
 				.setName('Hello')
-				.setType(ApplicationCommandType.Message),
+				.setType(ApplicationCommandType.Message)
+				.setDMPermission(false),
 			contextDescription: 'Sends a message that greets you, with a present!',
 			usage: 'Hello',
 			category: 'Context',

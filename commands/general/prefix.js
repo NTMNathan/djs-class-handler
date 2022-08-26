@@ -8,7 +8,8 @@ module.exports = class Prefix extends Command {
 		super(client, {
 			data: new SlashCommandBuilder()
 				.setName('prefix')
-				.setDescription('Sets a new bot prefix by filling out the modal'),
+				.setDescription('Sets a new bot prefix by filling out the modal')
+				.setDMPermission(false),
 			usage: 'prefix',
 			category: 'Info',
 			permissions: ['Use Application Commands', 'Send Messages', 'Embed Links'],

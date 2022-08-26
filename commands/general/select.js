@@ -7,7 +7,8 @@ module.exports = class Select extends Command {
 		super(client, {
 			data: new SlashCommandBuilder()
 				.setName('select')
-				.setDescription('Examples of the Discord Select Menu component.'),
+				.setDescription('Examples of the Discord Select Menu component.')
+				.setDMPermission(false),
 			usage: 'select',
 			category: 'Info',
 			permissions: ['Use Application Commands', 'Send Messages', 'Embed Links'],
