@@ -1,6 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { SlashCommandBuilder, ActionRowBuilder, SelectMenuBuilder } = require('discord.js');
+const { SlashCommandBuilder, ActionRowBuilder, StringSelectMenuBuilder } = require('discord.js');
 
 module.exports = class Select extends Command {
 	constructor(client) {
@@ -17,7 +17,7 @@ module.exports = class Select extends Command {
 	async run(client, interaction) {
 		const selectMenuRow = new ActionRowBuilder()
 			.addComponents(
-				new SelectMenuBuilder()
+				new StringSelectMenuBuilder()
 					.setPlaceholder('Select a color!')
 					.setCustomId('selectColor')
 					.setDisabled(false)

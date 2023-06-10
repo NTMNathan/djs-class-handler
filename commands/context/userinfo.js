@@ -20,7 +20,7 @@ module.exports = class UserInfo extends Command {
 		const member = interaction.guild.members.cache.get(interaction.targetId) || interaction.member;
 
 		const embed = new EmbedBuilder()
-			.setTitle(`**${member.user.username}#${member.user.discriminator}**`)
+			.setTitle(`**${member.user.username}${member.user.discriminator && member.user.discriminator !== '0' ? `#${member.user.discriminator}` : ''}**`)
 			.setColor(client.config.embedColor)
 			.setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 2048 }))
 			.addFields(

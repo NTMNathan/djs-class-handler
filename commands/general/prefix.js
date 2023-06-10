@@ -1,7 +1,6 @@
 const Command = require('../../structures/CommandClass');
 
-const { ModalBuilder, ActionRowBuilder, TextInputBuilder, TextInputStyle } = require('discord.js');
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder, ModalBuilder, ActionRowBuilder, TextInputBuilder, TextInputStyle } = require('discord.js');
 
 module.exports = class Prefix extends Command {
 	constructor(client) {
