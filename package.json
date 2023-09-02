@@ -1,5 +1,5 @@
 {
-    "name": "djs-command-handler",
+    "name": "djs-class-handler",
     "version": "1.2.2",
     "description": "A Discord.js Command Class Handler example using Slash Commands and Context Menus.",
     "main": "bot.js",
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NTMNathan/djs-command-handler.git"
+        "url": "git+https://github.com/NTMNathan/djs-class-handler.git"
     },
     "keywords": [
         "discord-bot",
@@ -27,9 +27,9 @@
     "author": "NTMNathan",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/NTMNathan/djs-command-handler/issues"
+        "url": "https://github.com/NTMNathan/djs-class-handler/issues"
     },
-    "homepage": "https://github.com/NTMNathan/djs-command-handler#readme",
+    "homepage": "https://github.com/NTMNathan/djs-class-handler#readme",
     "dependencies": {
         "@discordjs/rest": "^2.0.1",
         "common-tags": "^1.8.2",

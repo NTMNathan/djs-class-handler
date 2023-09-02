@@ -9,7 +9,7 @@ A Discord.js Command Class Handler example using Slash Commands and Context Menu
 ## Setup
 1. Create a folder on your computer, then type the following console command to clone this repository.
 ```bash
-git clone https://github.com/NTMNathan/djs-command-handler
+git clone https://github.com/NTMNathan/djs-class-handler
 ```
 
 2. Create a Discord Application and name it.
@@ -56,7 +56,7 @@ These will create a new set of commands in the server.
 - [Handling Commands](https://discordjs.guide/creating-your-bot/command-handling.html#command-handling)
 
 ## 👋 Support
-If you have found an issue with using this command handler example or have any suggestions? Feel free to join the [NTM Discord Server](https://discord.gg/G2rb53z), send an [issue](https://github.com/NTMNathan/djs-command-handler/issues) or [pull request](https://github.com/NTMNathan/djs-command-handler/pulls). We'll be happy to help and take a look!
+If you have found an issue with using this command handler example or have any suggestions? Feel free to join the [NTM Discord Server](https://discord.gg/G2rb53z), send an [issue](https://github.com/NTMNathan/djs-class-handler/issues) or [pull request](https://github.com/NTMNathan/djs-class-handler/pulls). We'll be happy to help and take a look!
 
 ## ❤️ Thanks!
 I am currently maintaining this repo during my spare time, so if you would like to support me. Feel free to do so by donating [here](https://buymeacoffee.com/ntmnathan) on Buy me a coffee.
