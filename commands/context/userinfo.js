@@ -44,7 +44,7 @@ module.exports = class UserInfo extends Command {
 				},
 				{
 					name: `📝 Roles [${member.roles.cache.size - 1}]`,
-					value: member.roles.cache.size ? member.roles.cache.map(roles => `**${roles}**`).slice(0, -1).join(' ') : 'None',
+					value: member.roles.cache.size - 1 ? member.roles.cache.map(roles => `**${roles}**`).slice(0, -1).join(' ') : 'None',
 					inline: false,
 				},
 			);

@@ -51,8 +51,8 @@ These will create a new set of commands in the server.
 - `context` folder contains the Context Menu commands.
 - `general` and other folders are slash commands.
 ## 📚 Guides
-- [Creating commands](https://discordjs.guide/creating-your-bot/creating-commands.html)
-- [Replying to Slash Commands](https://discordjs.guide/interactions/slash-commands.html#replying-to-slash-commands)
+- [Creating slash commands](https://discordjs.guide/creating-your-bot/slash-commands.html)
+- [Command response methods](https://discordjs.guide/slash-commands/response-methods.html)
 - [Handling Commands](https://discordjs.guide/creating-your-bot/command-handling.html#command-handling)
 
 ## 👋 Support
